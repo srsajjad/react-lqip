@@ -32,7 +32,7 @@ export const LQIP = props => {
     let io = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (
-          window.innerWidth <= 767 &&
+          window.innerWidth <= mobileBreakPoint &&
           entry.isIntersecting &&
           targetImage.src !== mobileSrc
         ) {
@@ -41,7 +41,7 @@ export const LQIP = props => {
         }
 
         if (
-          window.innerWidth > 767 &&
+          window.innerWidth > desktopBreakPoint &&
           entry.isIntersecting &&
           targetImage.src !== desktopSrc
         ) {

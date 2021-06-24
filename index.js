@@ -4,19 +4,14 @@ export const LQIP = props => {
   const {
     mobileThumbSrc,
     desktopThumbSrc,
-
     mobileSrc,
     desktopSrc,
-
     mobileBreakPoint = 767,
     desktopBreakPoint = 767,
-
     alt,
     fallback,
-
     className,
     style,
-
     ...others
   } = props
 
